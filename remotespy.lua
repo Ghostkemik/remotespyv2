@@ -145,6 +145,14 @@ local script = G2L["d"];
 		newLabel.Text = text
 		newLabel.Visible = true
 		newLabel.Parent = scrollingFrame
+		for _, label in ipairs(scrollingFrame:GetChildren()) do
+			if label:IsA("TextLabel") and label ~= newLabel then
+				label.LayoutOrder = label.LayoutOrder + 1
+			end
+		end
+
+		-- Yeni öğeyi en üste yerleştir
+		newLabel.LayoutOrder = -1 
 	end
 	
 	
