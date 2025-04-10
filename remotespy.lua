@@ -1,72 +1,37 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
 
--- Instances: 13 | Scripts: 1 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.RemoteSpyNyem
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["Name"] = [[RemoteSpyNyem]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
-
--- StarterGui.RemoteSpyNyem.Frame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
 G2L["2"]["Size"] = UDim2.new(0, 333, 0, 333);
 G2L["2"]["Position"] = UDim2.new(0.01194, 0, 0.26113, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
-
--- StarterGui.RemoteSpyNyem.Frame.TextButton
 G2L["3"] = Instance.new("TextButton", G2L["2"]);
 G2L["3"]["TextWrapped"] = true;
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3"]["TextSize"] = 14;
 G2L["3"]["TextScaled"] = true;
-G2L["3"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
 G2L["3"]["RichText"] = true;
 G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3"]["Size"] = UDim2.new(0, 44, 0, 31);
+G2L["3"]["Size"] = UDim2.new(0, 44, 0, 36);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["Text"] = [[-]];
 G2L["3"]["Position"] = UDim2.new(0.86787, 0, 0, 0);
 
-
--- StarterGui.RemoteSpyNyem.Frame.TextButton.UICorner
 G2L["4"] = Instance.new("UICorner", G2L["3"]);
 
+G2L["5"] = Instance.new("LocalScript", G2L["3"]);
 
+G2L["6"] = Instance.new("UICorner", G2L["2"]);
 
--- StarterGui.RemoteSpyNyem.Frame.UICorner
-G2L["5"] = Instance.new("UICorner", G2L["2"]);
-
-
-
--- StarterGui.RemoteSpyNyem.Frame.TextLabel
-G2L["6"] = Instance.new("TextLabel", G2L["2"]);
-G2L["6"]["TextWrapped"] = true;
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["TextSize"] = 14;
-G2L["6"]["TextScaled"] = true;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6"]["BackgroundTransparency"] = 1;
-G2L["6"]["Size"] = UDim2.new(0, 289, 0, 31);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Text"] = [[NYEM - RemoteSpy]];
-
-
--- StarterGui.RemoteSpyNyem.Frame.ScrollingFrame
 G2L["7"] = Instance.new("ScrollingFrame", G2L["2"]);
 G2L["7"]["Active"] = true;
 G2L["7"]["BorderSizePixel"] = 0;
@@ -81,139 +46,242 @@ G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.RemoteSpyNyem.Frame.ScrollingFrame.UIListLayout
 G2L["8"] = Instance.new("UIListLayout", G2L["7"]);
 G2L["8"]["Padding"] = UDim.new(0, 10);
 G2L["8"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
-
--- StarterGui.RemoteSpyNyem.Frame.ScrollingFrame.UIListLayout.Template
 G2L["9"] = Instance.new("TextLabel", G2L["8"]);
 G2L["9"]["TextWrapped"] = true;
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["TextSize"] = 14;
 G2L["9"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9"]["TextScaled"] = true;
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(76, 76, 76);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(77, 77, 77);
 G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9"]["Size"] = UDim2.new(0, 307, 0, 50);
 G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["9"]["Name"] = [[Template]];
 
-
--- StarterGui.RemoteSpyNyem.Frame.ScrollingFrame.UIListLayout.Template.UICorner
 G2L["a"] = Instance.new("UICorner", G2L["9"]);
 G2L["a"]["CornerRadius"] = UDim.new(0, 20);
 
-
--- StarterGui.RemoteSpyNyem.Frame.ScrollingFrame.UIListLayout.Template.UIStroke
 G2L["b"] = Instance.new("UIStroke", G2L["9"]);
 G2L["b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["b"]["Thickness"] = 1.4;
 G2L["b"]["Color"] = Color3.fromRGB(255, 255, 255);
 
-
--- StarterGui.RemoteSpyNyem.Frame.ScrollingFrame.UIPadding
 G2L["c"] = Instance.new("UIPadding", G2L["7"]);
 G2L["c"]["PaddingTop"] = UDim.new(0, 8);
 G2L["c"]["PaddingLeft"] = UDim.new(0, 8);
 
-
--- StarterGui.RemoteSpyNyem.Frame.LocalScript
 G2L["d"] = Instance.new("LocalScript", G2L["2"]);
 
+G2L["e"] = Instance.new("TextButton", G2L["2"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["e"]["RichText"] = true;
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 246, 0, 36);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Name"] = [[Control]];
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[]];
+G2L["e"]["Position"] = UDim2.new(-0.003, 0, 0, 0);
 
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
 
--- StarterGui.RemoteSpyNyem.Frame.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["e"]);
+
+G2L["11"] = Instance.new("TextButton", G2L["2"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["11"]["RichText"] = true;
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 44, 0, 36);
+G2L["11"]["Name"] = [[StartStop]];
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[🔴]];
+G2L["11"]["Position"] = UDim2.new(0.73574, 0, 0, 0);
+
+G2L["12"] = Instance.new("UICorner", G2L["11"]);
+
+G2L["13"] = Instance.new("TextLabel", G2L["2"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Size"] = UDim2.new(0, 225, 0, 31);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[NYEM - RemoteSpy]];
+G2L["13"]["Position"] = UDim2.new(0.02703, 0, 0.01502, 0);
+
+local function C_5()
+local script = G2L["5"];
+	local button = script.Parent 
+	local frame = button.Parent
+	
+	local db = false
+	
+	button.MouseButton1Click:Connect(function()
+		if db == false then
+			db = true
+			script.Parent.Parent.ScrollingFrame.Visible = false
+			frame.Size = UDim2.new(0, 333, 0, 37) 
+			button.Text = "+"
+		else
+			db = false
+			script.Parent.Parent.ScrollingFrame.Visible = true
+			frame.Size = UDim2.new(0, 333, 0, 333)
+			button.Text = "-"
+		end
+	end)
+	
+end;
+task.spawn(C_5);
+
 local function C_d()
 local script = G2L["d"];
-	-- LocalScript
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local Players = game:GetService("Players")
 	local player = Players.LocalPlayer
-	local playerGui = player:WaitForChild("PlayerGui")
 	
 	local guiFrame = script.Parent
 	local scrollingFrame = guiFrame:WaitForChild("ScrollingFrame")
 	local template = scrollingFrame:WaitForChild("UIListLayout").Template
 	
+	local listening = false
+	local childAddedConnection = nil
+	local remoteEventConnections = {} 
+	local remoteFunctionCallbacks = {} 
 	
-	-- Yeni satır oluşturan fonksiyon
 	local function addToLog(text)
 		local newLabel = template:Clone()
 		newLabel.Text = text
 		newLabel.Visible = true
 		newLabel.Parent = scrollingFrame
-		for _, label in ipairs(scrollingFrame:GetChildren()) do
-			if label:IsA("TextLabel") and label ~= newLabel then
-				label.LayoutOrder = label.LayoutOrder + 1
+	
+		for _, child in ipairs(scrollingFrame:GetChildren()) do
+			if child:IsA("TextLabel") and child ~= newLabel then
+				child.LayoutOrder += 1
 			end
 		end
-
-		-- Yeni öğeyi en üste yerleştir
-		newLabel.LayoutOrder = -1 
+	
+		newLabel.LayoutOrder = -1
 	end
 	
-	
-	-- Arg yazdırma fonksiyonu
-	local function printArgs(name, ...)
-		local text = "📢 Olay: " .. name
-		local args = {...}
+	local function printArgs(sourceName, ...)
+		local args = { ... }
+		local text = "📢 Olay: " .. sourceName
 		for i, v in ipairs(args) do
 			text = text .. string.format("\n   Arg %d => %s", i, tostring(v))
 		end
 		addToLog(text)
 	end
 	
-	
-	-- Remote dinleme
-	local function listenTo(child)
-		if child:IsA("RemoteEvent") then
-			child.OnClientEvent:Connect(function(...)
-				printArgs("RemoteEvent - " .. child:GetFullName(), ...)
+	local function listenTo(instance)
+		if instance:IsA("RemoteEvent") then
+			local connection = instance.OnClientEvent:Connect(function(...)
+				printArgs("RemoteEvent - " .. instance.Name, ...)
 			end)
-	
-		elseif child:IsA("RemoteFunction") then
-			local old = child.OnClientInvoke
-			child.OnClientInvoke = function(...)
-				printArgs("RemoteFunction - " .. child:GetFullName(), ...)
-				if old then
-					return old(...)
-				end
+			table.insert(remoteEventConnections, connection)
+		elseif instance:IsA("RemoteFunction") then
+			local function callback(...)
+				printArgs("RemoteFunction - " .. instance.Name, ...)
+				return "RemoteFunction'dan cevap"
 			end
-	
-		elseif child:IsA("BindableEvent") then
-			child.Event:Connect(function(...)
-				printArgs("BindableEvent - " .. child:GetFullName(), ...)
-			end)
-	
-		elseif child:IsA("BindableFunction") then
-			local old = child.OnInvoke
-			child.OnInvoke = function(...)
-				printArgs("BindableFunction - " .. child:GetFullName(), ...)
-				if old then
-					return old(...)
-				end
-			end
+			remoteFunctionCallbacks[instance] = callback
+			instance.OnClientInvoke = callback
 		end
 	end
 	
-	-- Mevcut tüm Remote'ları tarar
-	for _, child in ipairs(ReplicatedStorage:GetDescendants()) do
-		task.spawn(function()
+	local function stopListening()
+		if childAddedConnection then
+			childAddedConnection:Disconnect()
+			childAddedConnection = nil
+		end
+	
+		for _, connection in ipairs(remoteEventConnections) do
+			connection:Disconnect()
+		end
+		remoteEventConnections = {} 
+	
+		for instance, callback in pairs(remoteFunctionCallbacks) do
+			instance.OnClientInvoke = nil 
+		end
+		remoteFunctionCallbacks = {}
+	end
+	
+	local function startListening()
+		for _, child in ipairs(ReplicatedStorage:GetChildren()) do
+			listenTo(child)
+		end
+
+		childAddedConnection = ReplicatedStorage.ChildAdded:Connect(function(child)
 			listenTo(child)
 		end)
 	end
-	
-	-- Sonradan gelenleri de dinler
-	ReplicatedStorage.DescendantAdded:Connect(function(child)
-		task.spawn(function()
-			listenTo(child)
-		end)
+
+	local startStopButton = guiFrame:WaitForChild("StartStop")
+	startStopButton.MouseButton1Click:Connect(function()
+		if listening then
+			stopListening()
+			listening = false
+			startStopButton.Text = "🔴"
+		else
+			startListening() 
+			listening = true
+			startStopButton.Text = "🟢"
+		end
 	end)
 	
 end;
 task.spawn(C_d);
+
+local function C_10()
+local script = G2L["10"];
+	local button = script.Parent 
+	local frame = button.Parent
+	local userInputService = game:GetService("UserInputService")
+	
+	local dragging = false
+	local dragStart, startPos
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+			userInputService.InputChanged:Connect(function(input)
+				if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+					local delta = input.Position - dragStart
+					frame.Position = UDim2.new(
+						startPos.X.Scale, startPos.X.Offset + delta.X,
+						startPos.Y.Scale, startPos.Y.Offset + delta.Y
+					)
+				end
+			end)
+		end
+	end)
+	
+	button.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+		end
+	end)
+	
+end;
+task.spawn(C_10);
 
 return G2L["1"], require;
